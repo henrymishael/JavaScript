@@ -29,10 +29,17 @@
     let myArray = [ "Ryu", "Ken", "Chun-Li", "Cammy", "Guile", "Sakura", "Sagat", "Juri" ];
 
     // Add your code here
-    myArray = myArray.pop()
-    myArray[-1] = ['Naruto']
-    myArray[-2] = ['kakashi']
-    // Don't edit the code below here!
+    myArray.pop()
+    const length = myArray.length
+    //myArray[length-1] = ['Naruto']
+    //myArray[length] = ['kakashi']
+    myArray.push('Naruto','Kakashi')
+    for(name of myArray){
+      index = myArray.indexOf(name)
+      const myString = myArray.map((name, index) =>{return 
+        name + '('+index+')'}).join('-')}
+        console.log(myString)
+        // Don't edit the code below here!
 
     const section = document.querySelector('section');
 

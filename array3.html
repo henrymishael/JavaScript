@@ -34,19 +34,23 @@
     //myArray[length-1] = ['Naruto']
     //myArray[length] = ['kakashi']
     myArray.push('Naruto','Kakashi')
-    for(name of myArray){
-      index = myArray.indexOf(name)
-      const myString = myArray.map((name, index) =>{return 
-        name + '('+index+')'}).join('-')}
-        console.log(myString)
-        // Don't edit the code below here!
+    let Arr = []
+    for (const item of myArray) {
+      Arr.push(`${item} (${myArray.indexOf(item)})`)
+    }
+   let myString = myArray.join('-')
+    console.log(myString)
+  //  myString = myArray.map(e => `${item} (${myArray.indexOf(item)})`).join('-')
+  //  console.log(myString)
+    // Don't edit the code below here!
 
     const section = document.querySelector('section');
 
-    let para1 = document.createElement('p');
-    para1.textContent = myString;
+let para1 = document.createElement('p');
+para1.textContent = myString  ;
 
-    section.appendChild(para1);
+
+section.appendChild(para1);
   </script>
 
 </html>

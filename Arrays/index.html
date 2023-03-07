@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8"/>
-    <title>Conditionals: Task 1</title>
+    <title>Arrays: Task 1</title>
     <style>
       p {
         color: purple;
@@ -17,31 +17,39 @@
   </head>
 
   <body>
+    <main>
+      <a href="array2.html"></a>
+      <a href="array3.html"></a>
+      <a href="array4.html"></a>
+    </main>
 
-    <section class="preview"></section>
+    <section class="preview">
+      
+    </section>
 
   </body>
-  
-  
   <script>
-    let season = 'summer';
-    let response;
-
     // Add your code here
-    if(season.indexOf('summer') != -1){
-        response ='take off your sunglasses'}
-    if(season.indexOf('winter') != -1){
-        response = 'take off your shoes'}
-    else{
-        response = 'I do not know what season it is'}
+    
+    const myArray = ['bread', 'rice', 'eggsauce']
+    myArray[0] = ['beans']
+    myArray[1] = ['ham']
+    myArray.unshift('Akara')
+
     // Don't edit the code below here!
 
     const section = document.querySelector('section');
-
-    let para1 = document.createElement('p');
-    para1.textContent = response;
-    section.appendChild(para1);
     
+    let para1 = document.createElement('p');
+    
+   
+    para1.textContent = `Array: ${ myArray }`
+    
+   
+    
+    section.appendChild(para1);
+   
   </script>
 
+  
 </html>

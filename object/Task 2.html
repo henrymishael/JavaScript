@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Object basics: Task 2</title>
+    <style>
+      p {
+        color: purple;
+        margin: 0.5em 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+
+  <body>
+
+    <section class="preview">
+
+
+
+    </section>
+
+  </body>
+  <script>
+    let bandInfo ={
+
+    // Add your code here
+    
+ name :'Dumblee',
+nationality : 'Nigerian',
+Genre : 'Hip Hop',
+members : 10,
+formed : 2002,
+split : 'false',
+albums : [ {name:'Live your Life', year : 2005}, {name:'Living everyday', year: 2008}]
+    }   
+
+console.log(bandInfo)
+
+bandInfo = `The ${bandInfo.name} band from ${bandInfo.nationality} have ${bandInfo.members} members. They play ${bandInfo.Genre} music and was formed in the year ${bandInfo.formed}. Their first album '${bandInfo.albums[0].name}' and was released in the year ${bandInfo.albums[0].year}`
+console.log(bandInfo)
+    // Don't edit the code below here!
+   
+
+    const section = document.querySelector('section');
+    let para1 = document.createElement('p');
+    para1.textContent = bandInfo;
+    section.appendChild(para1);
+  </script>
+
+</html>
